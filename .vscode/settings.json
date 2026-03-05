@@ -1,0 +1,5 @@
+{
+    "json.schemaDownload.enable": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.allowInUntrustedWorkspace": false
+}
