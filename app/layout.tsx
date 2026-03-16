@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
@@ -36,7 +38,14 @@ export default function RootLayout({
       <body
         className={`${inter.variable} font-sans antialiased bg-deep-navy text-foreground`}
       >
-        {children}
+        <div className="relative flex min-h-screen w-full flex-col [overflow-x:clip]">
+          <div className="fixed inset-0 bg-gradient-to-b from-primary/5 via-transparent to-deep-navy pointer-events-none z-0" />
+          <Header />
+          <main className="flex flex-col relative z-10 flex-1">
+            {children}
+          </main>
+          <Footer />
+        </div>
         <Analytics />
       </body>
     </html>
