@@ -32,25 +32,25 @@ const products = [
     icon: Monitor,
     title: "EAM & Asset Management",
     description: "Enterprise asset lifecycle management platforms",
-    href: "/solutions#eam",
+    href: "/software/eam",
   },
   {
     icon: Truck,
     title: "Fleet & Logistics",
     description: "Fleet tracking, dispatch, and route optimization",
-    href: "/solutions#fleet",
+    href: "/software/fleet",
   },
   {
     icon: BarChart3,
     title: "Business Intelligence",
     description: "Analytics, reporting, and data visualization",
-    href: "/solutions#analytics",
+    href: "/software/analytics",
   },
   {
     icon: Layers,
     title: "ERP & Operations",
     description: "Integrated enterprise resource planning systems",
-    href: "/solutions#erp",
+    href: "/software/erp",
   },
 ]
 
@@ -59,25 +59,25 @@ const solutions = [
     icon: Mountain,
     title: "Mining",
     description: "Open-pit, underground, and remote operations",
-    href: "/solutions#mining",
+    href: "/industries/mining",
   },
   {
     icon: HardHat,
     title: "Construction",
     description: "Heavy civil and infrastructure projects",
-    href: "/solutions#construction",
+    href: "/industries/construction",
   },
   {
     icon: Zap,
     title: "Energy",
     description: "Power generation and renewable energy",
-    href: "/solutions#energy",
+    href: "/industries/energy",
   },
   {
     icon: Truck,
     title: "Logistics & Transport",
     description: "Supply chain and fleet operations",
-    href: "/solutions#logistics",
+    href: "/industries/logistics",
   },
 ]
 
@@ -131,7 +131,7 @@ export function Header() {
                 Software
               </NavigationMenuTrigger>
               <NavigationMenuContent className="!bg-deep-navy/95 backdrop-blur-lg !border-white/10 !rounded-xl !shadow-glow overflow-hidden">
-                <div className="grid w-[500px] grid-cols-2 gap-1 p-3">
+                <div className="grid w-[500px] grid-cols-2 gap-1 p-3 whitespace-normal">
                   {products.map((item) => (
                     <NavDropdownItem key={item.title} {...item} />
                   ))}
@@ -144,7 +144,7 @@ export function Header() {
                 Industries
               </NavigationMenuTrigger>
               <NavigationMenuContent className="!bg-deep-navy/95 backdrop-blur-lg !border-white/10 !rounded-xl !shadow-glow overflow-hidden">
-                <div className="grid w-[500px] grid-cols-2 gap-1 p-3">
+                <div className="grid w-[500px] grid-cols-2 gap-1 p-3 whitespace-normal">
                   {solutions.map((item) => (
                     <NavDropdownItem key={item.title} {...item} />
                   ))}

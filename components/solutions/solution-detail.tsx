@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Mountain, HardHat, Radio, Building2, Zap, Truck } from "lucide-react"
+import { Mountain, HardHat, Radio, Building2, Zap, Truck, Monitor, BarChart3, Cpu, Layers } from "lucide-react"
 
 const iconMap = {
   Mountain,
@@ -10,6 +10,10 @@ const iconMap = {
   Building2,
   Zap,
   Truck,
+  Monitor,
+  BarChart3,
+  Cpu,
+  Layers,
 }
 
 interface SolutionDetailProps {

@@ -10,28 +10,28 @@ const solutions = [
     title: "Enterprise Asset Management",
     description:
       "Track, maintain, and optimize every asset across your organization. Full lifecycle management with preventive maintenance, compliance tracking, and real-time visibility.",
-    href: "/solutions#eam",
+    href: "/software/eam",
   },
   {
     icon: Truck,
     title: "Fleet Management System",
     description:
       "Real-time GPS tracking, dispatch optimization, and fuel management for fleets of any size. Deployed and supported locally across Mongolia.",
-    href: "/solutions#fleet",
+    href: "/software/fleet",
   },
   {
     icon: Cpu,
     title: "ERP & Operations",
     description:
       "Integrated enterprise resource planning platforms that connect finance, procurement, inventory, and operations into a single system of record.",
-    href: "/solutions#erp",
+    href: "/software/erp",
   },
   {
     icon: BarChart3,
     title: "Analytics & Reporting",
     description:
       "Transform operational data into actionable insights. Business intelligence dashboards, predictive analytics, and custom reports for every stakeholder.",
-    href: "/solutions#analytics",
+    href: "/software/analytics",
   },
 ]
 

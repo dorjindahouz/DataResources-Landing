@@ -3,17 +3,16 @@ import { Logo } from "@/components/logo"
 
 const footerLinks = {
   Software: [
-    { label: "EAM Platforms", href: "/solutions#eam" },
-    { label: "Fleet Management", href: "/solutions#fleet" },
-    { label: "Business Intelligence", href: "/solutions#analytics" },
-    { label: "ERP Solutions", href: "/solutions#erp" },
+    { label: "EAM Platforms", href: "/software/eam" },
+    { label: "Fleet Management", href: "/software/fleet" },
+    { label: "Business Intelligence", href: "/software/analytics" },
+    { label: "ERP Solutions", href: "/software/erp" },
   ],
   Industries: [
-    { label: "Mining", href: "/solutions#mining" },
-    { label: "Construction", href: "/solutions#construction" },
-    { label: "Energy", href: "/solutions#energy" },
-    { label: "Logistics", href: "/solutions#logistics" },
-    { label: "Government", href: "/solutions#government" },
+    { label: "Mining", href: "/industries/mining" },
+    { label: "Construction", href: "/industries/construction" },
+    { label: "Energy", href: "/industries/energy" },
+    { label: "Logistics", href: "/industries/logistics" },
   ],
   Resources: [
     { label: "Case Studies", href: "/#case-study" },
