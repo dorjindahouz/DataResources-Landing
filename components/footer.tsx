@@ -2,17 +2,18 @@ import Link from "next/link"
 import { Logo } from "@/components/logo"
 
 const footerLinks = {
-  Products: [
-    { label: "EAM Platform", href: "/#solutions" },
-    { label: "Fleet Management", href: "/#solutions" },
-    { label: "Edge Computing", href: "/solutions" },
-    { label: "The Framework", href: "/#framework" },
+  Software: [
+    { label: "EAM Platforms", href: "/solutions#eam" },
+    { label: "Fleet Management", href: "/solutions#fleet" },
+    { label: "Business Intelligence", href: "/solutions#analytics" },
+    { label: "ERP Solutions", href: "/solutions#erp" },
   ],
-  Solutions: [
-    { label: "Open-Pit Mining", href: "/solutions#open-pit" },
-    { label: "Underground", href: "/solutions#underground" },
-    { label: "Remote Operations", href: "/solutions#remote" },
-    { label: "Enterprise", href: "/enterprise" },
+  Industries: [
+    { label: "Mining", href: "/solutions#mining" },
+    { label: "Construction", href: "/solutions#construction" },
+    { label: "Energy", href: "/solutions#energy" },
+    { label: "Logistics", href: "/solutions#logistics" },
+    { label: "Government", href: "/solutions#government" },
   ],
   Resources: [
     { label: "Case Studies", href: "/#case-study" },
@@ -42,7 +43,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
-              Industrial mining software for Mongolia&apos;s most demanding environments.
+              Mongolia&apos;s trusted partner for world-class enterprise software distribution, deployment, and support.
             </p>
           </div>
 
@@ -74,7 +75,7 @@ export function Footer() {
             &copy; 2024 Data Resources LLC. All rights reserved.
           </p>
           <p className="text-muted-foreground text-sm">
-            Industrial Engineering &amp; Distribution &mdash; Ulaanbaatar, Mongolia
+            Enterprise Software Distribution &mdash; Ulaanbaatar, Mongolia
           </p>
         </div>
       </div>

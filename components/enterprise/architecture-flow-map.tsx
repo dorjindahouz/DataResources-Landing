@@ -4,9 +4,9 @@ import { motion } from "framer-motion"
 import { Truck, Server, BarChart3 } from "lucide-react"
 
 const nodes = [
-  { icon: Truck, label: "Edge (Truck)", status: "Offline-capable" },
-  { icon: Server, label: "Site Server", status: "48hr buffer" },
-  { icon: BarChart3, label: "HQ Dashboard (UB)", status: "Real-time" },
+  { icon: Truck, label: "Field Operations", status: "Edge-capable" },
+  { icon: Server, label: "Regional Server", status: "Always-on buffer" },
+  { icon: BarChart3, label: "HQ Dashboard", status: "Real-time" },
 ]
 
 function FlowPath({ index }: { index: number }) {
@@ -92,10 +92,10 @@ export function ArchitectureFlowMap() {
           transition={{ duration: 0.6 }}
         >
           <span className="text-primary font-bold text-sm tracking-widest uppercase">
-            Deep Gobi Resilience
+            Deployment Architecture
           </span>
           <h2 className="font-black tracking-tighter text-3xl lg:text-4xl text-foreground mt-2 text-balance">
-            Your Data Survives 48-Hour Satellite Outages
+            Seamless Data Flow From Field to Headquarters
           </h2>
           <p className="text-muted-foreground text-lg mt-4 max-w-2xl mx-auto">
             Edge-to-HQ data flow that never loses a byte — even when connectivity drops for days.

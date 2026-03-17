@@ -6,21 +6,21 @@ import { motion } from "framer-motion"
 const capabilities = [
   {
     icon: Server,
-    title: "Bare-Metal & VM Deployment",
+    title: "Infrastructure Setup",
     description:
-      "Robust server setups built for extreme temperature variances and dust protection.",
+      "Full server, network, and environment configuration tailored to Mongolian conditions.",
   },
   {
     icon: Network,
-    title: "VLAN & Network Segmentation",
+    title: "System Integration",
     description:
-      "Securing operational technology (OT) from corporate networks via complex VLAN configs.",
+      "Connecting new software with your existing ERP, SCADA, and business systems.",
   },
   {
     icon: Terminal,
-    title: "C4M, R4M, H4M Stack",
+    title: "Training & Handoff",
     description:
-      "Custom integration of mining-specific protocols for real-time asset tracking.",
+      "Comprehensive Mongolian-language training and documentation for every deployment.",
   },
 ]
 
@@ -41,16 +41,16 @@ export function Implementation() {
           >
             <div>
               <span className="text-primary font-bold text-sm tracking-widest uppercase">
-                Field Ready Architecture
+                Deployment Expertise
               </span>
               <h2 className="font-black tracking-tighter text-3xl lg:text-4xl text-foreground mt-2 text-balance">
-                Remote Implementation Capabilities
+                We Deploy Where Others Can&apos;t
               </h2>
             </div>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              We specialize in the technical heavy-lifting required for remote
-              Mongolian sites. From Ulaanbaatar to the deep Gobi, we ensure
-              infrastructure stability.
+              From Ulaanbaatar headquarters to remote sites across Mongolia&apos;s
+              vast terrain, we handle the infrastructure, configuration, and
+              deployment that global vendors can&apos;t provide from overseas.
             </p>
             <ul className="space-y-4">
               {capabilities.map((cap, i) => (
@@ -89,25 +89,25 @@ export function Implementation() {
               <div className="w-3 h-3 rounded-full bg-green-500" />
             </div>
             <div className="text-primary/80 mb-2">
-              {"# Initializing Remote Deployment v4.2"}
+              {"# Initializing Enterprise Deployment v4.2"}
             </div>
             <div className="text-slate-300">
-              {'$ connect --site "Gobi South" --vlan 40'}
+              {'$ connect --client "TDB Group" --region "Central"'}
             </div>
             <div className="text-green-400">
-              Success: Secure tunnel established via local edge server
+              Success: Secure deployment environment established
             </div>
             <div className="text-slate-300 mt-2">
-              {'$ deploy --core "EAM-Ledger" --type "bare-metal"'}
+              {'$ deploy --platform "EAM-Pro" --type "on-premise"'}
             </div>
             <div className="text-slate-500 mt-2">
-              {"[..........] 45% VM Container Sync"}
+              {"[..........] 45% System Configuration"}
             </div>
             <div className="text-slate-500">
-              {"[...............] 82% Network Calibration"}
+              {"[...............] 82% Data Migration"}
             </div>
             <div className="text-green-400 mt-4">
-              Node Active: Ready for 90-day pilot sync.
+              Deployment Active: Ready for user acceptance testing.
             </div>
             {/* Abstract glow */}
             <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-primary/10 blur-[80px]" />

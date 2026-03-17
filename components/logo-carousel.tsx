@@ -1,15 +1,15 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Shield, Cpu, Factory, Truck, HardHat, Drill } from "lucide-react"
+import { Shield, Cpu, Factory, Truck, Building2, Zap } from "lucide-react"
 
 const logos = [
-  { icon: Shield, name: "SecureMining" },
+  { icon: Shield, name: "SecureOps" },
   { icon: Cpu, name: "DataCore" },
   { icon: Factory, name: "IndustrialFlow" },
   { icon: Truck, name: "LogiTrack" },
-  { icon: HardHat, name: "SafetyFirst" },
-  { icon: Drill, name: "DeepEarth" },
+  { icon: Building2, name: "CityBuild" },
+  { icon: Zap, name: "PowerGrid" },
 ]
 
 export function LogoCarousel() {

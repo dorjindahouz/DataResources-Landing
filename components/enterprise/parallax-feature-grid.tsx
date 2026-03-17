@@ -7,9 +7,9 @@ import { Wifi, Shield, Monitor, Users, Cpu, Globe } from "lucide-react"
 const features = [
   {
     icon: Wifi,
-    title: "Satellite-Resilient Sync",
+    title: "Resilient Connectivity",
     description:
-      "Data buffers locally for up to 48 hours and auto-syncs the moment connectivity returns. Zero bytes lost.",
+      "Data buffers locally and auto-syncs the moment connectivity returns. Designed for Mongolia's challenging infrastructure.",
     yOffset: 20,
   },
   {
@@ -21,30 +21,30 @@ const features = [
   },
   {
     icon: Monitor,
-    title: "One-Screen Fleet View",
+    title: "Unified Dashboard",
     description:
-      "Your CEO in UB sees real-time fuel burn, maintenance status, and fleet positions across every site.",
+      "Real-time visibility into operations, assets, and performance metrics across every site from a single screen.",
     yOffset: 20,
   },
   {
     icon: Users,
     title: "White-Glove Deployment",
     description:
-      "Our engineers live on your site until the system works. No remote hand-offs, no ticket queues.",
+      "Our engineers work on your site until the system runs flawlessly. No remote hand-offs, no ticket queues.",
     yOffset: 40,
   },
   {
     icon: Cpu,
-    title: "Predictive Maintenance AI",
+    title: "Predictive Analytics",
     description:
-      "ML models trained on Mongolian fleet data predict failures before they strand equipment in the field.",
+      "AI-powered models trained on local operational data predict issues before they impact your business.",
     yOffset: 20,
   },
   {
     icon: Globe,
     title: "Multi-Site Command",
     description:
-      "Unified dashboard across Gobi, Erdenet, and OT — with per-site permissions and drill-down.",
+      "Unified management across all your locations — with per-site permissions and granular drill-down.",
     yOffset: 40,
   },
 ]
@@ -105,10 +105,10 @@ export function ParallaxFeatureGrid() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-black tracking-tighter text-3xl lg:text-4xl text-foreground text-balance">
-            Your CEO in UB Sees Real-Time Fuel Burn 600km Away
+            Full Visibility Across Every Site, Every Platform
           </h2>
           <p className="text-muted-foreground text-lg mt-4 max-w-2xl mx-auto">
-            Every feature addresses a real anxiety of large-scale Mongolian mining operations.
+            Enterprise features designed for the realities of multi-site Mongolian operations.
           </p>
         </motion.div>
 

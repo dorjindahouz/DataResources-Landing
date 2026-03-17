@@ -23,17 +23,17 @@ const initialFormData: SalesFormData = {
   phone: "",
   fleet_size: "",
   timeline: "Within 3 months",
-  interest: "Full EAM Implementation",
+  interest: "Software Evaluation",
   message: "",
 }
 
 const deploymentOptions = [
-  "Full EAM Implementation",
-  "Fleet Management System",
-  "Edge Computing Setup",
-  "90-Day Pilot Program",
+  "Software Evaluation",
+  "Full Platform Deployment",
+  "System Integration",
+  "Multi-Site Rollout",
   "Infrastructure Consulting",
-  "Multi-Site Deployment",
+  "Support & Maintenance",
 ]
 
 const timelineOptions = [
@@ -124,7 +124,7 @@ export function SalesForm() {
             </div>
             <div className="space-y-2">
               <label htmlFor="company" className="text-sm font-bold text-muted-foreground">
-                Mining Company
+                Company
               </label>
               <input
                 id="company"
@@ -133,7 +133,7 @@ export function SalesForm() {
                 required
                 value={formData.company}
                 onChange={handleChange}
-                placeholder="Gobi Minerals"
+                placeholder="Your Company Name"
                 className={inputClass}
               />
             </div>
@@ -174,7 +174,7 @@ export function SalesForm() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <label htmlFor="fleet_size" className="text-sm font-bold text-muted-foreground">
-                Fleet Size
+                Organization Size
               </label>
               <input
                 id="fleet_size"
@@ -182,7 +182,7 @@ export function SalesForm() {
                 type="text"
                 value={formData.fleet_size}
                 onChange={handleChange}
-                placeholder="e.g. 50 trucks, 12 excavators"
+                placeholder="e.g. 500 employees, 3 sites"
                 className={inputClass}
               />
             </div>
@@ -231,7 +231,7 @@ export function SalesForm() {
               rows={4}
               value={formData.message}
               onChange={handleChange}
-              placeholder="Briefly describe your site constraints (connectivity, terrain, fleet size, etc.)"
+              placeholder="Briefly describe your requirements (systems, scale, timeline, etc.)"
               className={`${inputClass} resize-none`}
             />
           </div>

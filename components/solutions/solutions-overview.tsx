@@ -9,28 +9,28 @@ const solutions = [
     icon: Monitor,
     title: "Enterprise Asset Management",
     description:
-      "Track, maintain, and optimize every piece of equipment across your mining operation. Offline-first architecture ensures zero downtime in connectivity-challenged environments.",
+      "Track, maintain, and optimize every asset across your organization. Full lifecycle management with preventive maintenance, compliance tracking, and real-time visibility.",
     href: "/solutions#eam",
   },
   {
     icon: Truck,
     title: "Fleet Management System",
     description:
-      "Real-time GPS tracking, dispatch optimization, and fuel management for your entire fleet. Works seamlessly with edge computing for remote sites.",
-    href: "/solutions#fms",
+      "Real-time GPS tracking, dispatch optimization, and fuel management for fleets of any size. Deployed and supported locally across Mongolia.",
+    href: "/solutions#fleet",
   },
   {
     icon: Cpu,
-    title: "Edge Computing",
+    title: "ERP & Operations",
     description:
-      "Deploy processing power at the mine face. Our edge nodes ensure data capture and critical operations continue even when satellite links drop.",
-    href: "/solutions#edge",
+      "Integrated enterprise resource planning platforms that connect finance, procurement, inventory, and operations into a single system of record.",
+    href: "/solutions#erp",
   },
   {
     icon: BarChart3,
     title: "Analytics & Reporting",
     description:
-      "Transform operational data into actionable insights. OEE dashboards, predictive maintenance alerts, and custom reports for every stakeholder.",
+      "Transform operational data into actionable insights. Business intelligence dashboards, predictive analytics, and custom reports for every stakeholder.",
     href: "/solutions#analytics",
   },
 ]
@@ -47,10 +47,10 @@ export function SolutionsOverview() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-black tracking-tighter text-3xl lg:text-4xl text-foreground">
-            Our Platform
+            Software We Distribute
           </h2>
           <p className="text-muted-foreground text-lg mt-4 max-w-2xl mx-auto">
-            Purpose-built software modules designed for Mongolia&apos;s unique mining challenges.
+            Enterprise-grade platforms from world-leading vendors, deployed and supported locally in Mongolia.
           </p>
         </motion.div>
         <div className="grid md:grid-cols-2 gap-8">

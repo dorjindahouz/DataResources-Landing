@@ -1,13 +1,15 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Mountain, HardHat, Radio, Building2 } from "lucide-react"
+import { Mountain, HardHat, Radio, Building2, Zap, Truck } from "lucide-react"
 
 const iconMap = {
   Mountain,
   HardHat,
   Radio,
   Building2,
+  Zap,
+  Truck,
 }
 
 interface SolutionDetailProps {

@@ -9,9 +9,9 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 
 export const metadata: Metadata = {
-  title: "Data Resources LLC | Industrial Mining Software Mongolia",
+  title: "Data Resources LLC | Enterprise Software Solutions Mongolia",
   description:
-    "Architecting and deploying offline-first, high-availability Enterprise Asset Management (EAM) and Fleet Management Systems (FMS) for Mongolia's most demanding mining environments.",
+    "Mongolia's trusted software distribution and implementation partner. Connecting enterprises across mining, energy, construction, logistics, and more with world-class software solutions.",
   generator: "v0.app",
   icons: {
     icon: [

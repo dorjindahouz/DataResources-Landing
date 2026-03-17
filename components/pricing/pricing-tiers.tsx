@@ -15,7 +15,7 @@ const tiers = [
     features: [
       "Single-site deployment",
       "Up to 25 assets tracked",
-      "Core EAM modules",
+      "Core software modules",
       "Edge computing node (1x)",
       "Email support",
       "Data migration assistance",
@@ -33,7 +33,7 @@ const tiers = [
     features: [
       "Multi-site deployment",
       "Unlimited assets",
-      "Full EAM + FMS suite",
+      "Full software platform suite",
       "Edge computing nodes (3x)",
       "24/7 phone & email support",
       "Custom integrations (ERP/SCADA)",
@@ -46,7 +46,7 @@ const tiers = [
   },
   {
     name: "Enterprise",
-    description: "Bespoke solution for large-scale mining",
+    description: "Bespoke solution for large-scale enterprises",
     price: "Custom",
     priceNote: "Tailored to your operation",
     badge: null,

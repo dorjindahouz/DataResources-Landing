@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Menu, Monitor, Truck, Cpu, Layers, Mountain, HardHat, Radio, BarChart3 } from "lucide-react"
+import { Menu, Monitor, Truck, Layers, Mountain, HardHat, BarChart3, Zap } from "lucide-react"
 import { Logo } from "@/components/logo"
 import {
   NavigationMenu,
@@ -30,54 +30,54 @@ import {
 const products = [
   {
     icon: Monitor,
-    title: "EAM Platform",
-    description: "Enterprise Asset Management for mining operations",
-    href: "/#solutions",
+    title: "EAM & Asset Management",
+    description: "Enterprise asset lifecycle management platforms",
+    href: "/solutions#eam",
   },
   {
     icon: Truck,
-    title: "Fleet Management",
-    description: "Real-time fleet tracking and optimization",
-    href: "/#solutions",
+    title: "Fleet & Logistics",
+    description: "Fleet tracking, dispatch, and route optimization",
+    href: "/solutions#fleet",
   },
   {
-    icon: Cpu,
-    title: "Edge Computing",
-    description: "Offline-first processing for remote sites",
-    href: "/solutions",
+    icon: BarChart3,
+    title: "Business Intelligence",
+    description: "Analytics, reporting, and data visualization",
+    href: "/solutions#analytics",
   },
   {
     icon: Layers,
-    title: "The Framework",
-    description: "Our proven deployment methodology",
-    href: "/#framework",
+    title: "ERP & Operations",
+    description: "Integrated enterprise resource planning systems",
+    href: "/solutions#erp",
   },
 ]
 
 const solutions = [
   {
     icon: Mountain,
-    title: "Open-Pit Mining",
-    description: "Large-scale surface operation management",
-    href: "/solutions#open-pit",
+    title: "Mining",
+    description: "Open-pit, underground, and remote operations",
+    href: "/solutions#mining",
   },
   {
     icon: HardHat,
-    title: "Underground Mining",
-    description: "Connectivity solutions for subsurface ops",
-    href: "/solutions#underground",
+    title: "Construction",
+    description: "Heavy civil and infrastructure projects",
+    href: "/solutions#construction",
   },
   {
-    icon: Radio,
-    title: "Remote Operations",
-    description: "Satellite-linked offline-first deployments",
-    href: "/solutions#remote",
+    icon: Zap,
+    title: "Energy",
+    description: "Power generation and renewable energy",
+    href: "/solutions#energy",
   },
   {
-    icon: BarChart3,
-    title: "Case Studies",
-    description: "Real results from Mongolian mining sites",
-    href: "/#case-study",
+    icon: Truck,
+    title: "Logistics & Transport",
+    description: "Supply chain and fleet operations",
+    href: "/solutions#logistics",
   },
 ]
 
@@ -128,7 +128,7 @@ export function Header() {
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuTrigger className="bg-transparent text-muted-foreground hover:text-primary hover:bg-white/5 data-[state=open]:bg-white/5">
-                Products
+                Software
               </NavigationMenuTrigger>
               <NavigationMenuContent className="!bg-deep-navy/95 backdrop-blur-lg !border-white/10 !rounded-xl !shadow-glow overflow-hidden">
                 <div className="grid w-[500px] grid-cols-2 gap-1 p-3">
@@ -141,7 +141,7 @@ export function Header() {
 
             <NavigationMenuItem>
               <NavigationMenuTrigger className="bg-transparent text-muted-foreground hover:text-primary hover:bg-white/5 data-[state=open]:bg-white/5">
-                Solutions
+                Industries
               </NavigationMenuTrigger>
               <NavigationMenuContent className="!bg-deep-navy/95 backdrop-blur-lg !border-white/10 !rounded-xl !shadow-glow overflow-hidden">
                 <div className="grid w-[500px] grid-cols-2 gap-1 p-3">
@@ -206,7 +206,7 @@ export function Header() {
               <Accordion type="multiple" className="w-full">
                 <AccordionItem value="products" className="border-white/10">
                   <AccordionTrigger className="text-foreground font-bold hover:no-underline hover:text-primary">
-                    Products
+                    Software
                   </AccordionTrigger>
                   <AccordionContent>
                     <div className="flex flex-col gap-1 pl-2">
@@ -228,7 +228,7 @@ export function Header() {
 
                 <AccordionItem value="solutions" className="border-white/10">
                   <AccordionTrigger className="text-foreground font-bold hover:no-underline hover:text-primary">
-                    Solutions
+                    Industries
                   </AccordionTrigger>
                   <AccordionContent>
                     <div className="flex flex-col gap-1 pl-2">

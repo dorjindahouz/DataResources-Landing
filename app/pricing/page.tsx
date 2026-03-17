@@ -8,7 +8,7 @@ import { FAQSection } from "@/components/faq-section"
 export const metadata: Metadata = {
   title: "Pricing | Data Resources LLC",
   description:
-    "Transparent, custom pricing for mining software — from 90-day pilots to enterprise-scale multi-site deployments.",
+    "Transparent pricing for enterprise software deployment — from pilot programs to multi-site enterprise rollouts across Mongolia.",
 }
 
 const faqs = [
@@ -60,7 +60,7 @@ export default function PricingPage() {
 
       <CTABanner
         headline="Not sure which plan is right?"
-        description="Our team will help you evaluate the best option based on your fleet size, site count, and operational requirements."
+        description="Our team will help you evaluate the best option based on your organization size, site count, and operational requirements."
         primaryCTA={{ label: "Talk to Sales", href: "/contact-sales" }}
         secondaryCTA={{ label: "View Enterprise", href: "/enterprise" }}
       />

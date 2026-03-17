@@ -12,14 +12,14 @@ import { FloatingConsultationTerminal } from "@/components/enterprise/floating-c
 export const metadata: Metadata = {
   title: "Enterprise | Data Resources LLC",
   description:
-    "Purpose-built mining software for Mongolia's largest operations. Offline-resilient, sovereignty-compliant, with white-glove deployment.",
+    "Enterprise-scale software deployment and support for Mongolia's largest organizations.",
 }
 
 const metrics = [
-  { value: "47", label: "Active Mine Sites" },
+  { value: "50+", label: "Enterprise Clients" },
   { value: "99.9%", label: "Uptime SLA" },
-  { value: "12k+", label: "Assets Tracked" },
-  { value: "0", label: "Data Lost in Outages" },
+  { value: "8", label: "Industry Sectors" },
+  { value: "200+", label: "Deployments Completed" },
 ]
 
 export default function EnterprisePage() {
@@ -27,9 +27,9 @@ export default function EnterprisePage() {
     <>
       <PageHero
         badge="Enterprise"
-        title="Command Every Asset Across the Gobi — From One Screen in UB"
-        subtitle="Purpose-built for Mongolia's mining operations: offline-resilient, sovereignty-compliant, deployed by engineers who live on your site until it works."
-        primaryCTA={{ label: "Book Site Assessment", href: "/contact-sales" }}
+        title="Enterprise-Scale Software Deployment Across Mongolia"
+        subtitle="Multi-site, multi-platform deployments with white-glove service. Our engineers work on-site until every system runs flawlessly."
+        primaryCTA={{ label: "Book Consultation", href: "/contact-sales" }}
         secondaryCTA={{ label: "View Pricing", href: "/pricing" }}
       >
         <SystemHeartbeat />
@@ -46,9 +46,9 @@ export default function EnterprisePage() {
       <SecuritySection />
 
       <CTABanner
-        headline="Your fleet doesn't sleep. Neither do we."
-        description="Book a site assessment and get your pilot plan in 48 hours. Our engineers deploy on-site — not from a ticket queue."
-        primaryCTA={{ label: "Book Site Assessment", href: "/contact-sales" }}
+        headline="Your operations don't pause. Neither do we."
+        description="Book a consultation and get your deployment plan in 48 hours. Our engineers deploy on-site — not from a ticket queue."
+        primaryCTA={{ label: "Book Consultation", href: "/contact-sales" }}
         secondaryCTA={{ label: "View Pricing", href: "/pricing" }}
       />
 

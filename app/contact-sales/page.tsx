@@ -8,14 +8,14 @@ import { FAQSection } from "@/components/faq-section"
 export const metadata: Metadata = {
   title: "Contact Sales | Data Resources LLC",
   description:
-    "Get in touch with our sales team to discuss EAM, Fleet Management, and Edge Computing solutions for your mining operation in Mongolia.",
+    "Get in touch to discuss enterprise software solutions for your Mongolian business.",
 }
 
 const metrics = [
-  { value: "-73%", label: "Equipment Downtime" },
-  { value: "+41%", label: "OEE Improvement" },
+  { value: "200+", label: "Deployments Completed" },
+  { value: "50+", label: "Enterprise Clients" },
   { value: "99.9%", label: "System Uptime" },
-  { value: "12 wk", label: "Avg. Deployment" },
+  { value: "8", label: "Industries Served" },
 ]
 
 const faqs = [
@@ -51,8 +51,8 @@ export default function ContactSalesPage() {
     <>
       <PageHero
         badge="Sales Inquiry"
-        title="Let's Talk About Your Mining Operation"
-        subtitle="Our team has deployed industrial software across Mongolia's toughest mining environments. Tell us about your operation and we'll design a solution that fits."
+        title="Let's Talk About Your Business"
+        subtitle="Our team has deployed enterprise software across Mongolia's most demanding industries. Tell us about your challenges and we'll design a solution that fits."
         centered
       />
 

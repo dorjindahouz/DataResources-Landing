@@ -24,9 +24,9 @@ interface CaseStudyData {
 
 const caseStudies: CaseStudyData[] = [
   {
-    id: "erdene-mongol",
-    company: "Erdene Mongol",
-    tagline: "Gold & Copper Exploration → Fleet Intelligence",
+    id: "erdene-resources",
+    company: "Erdene Resources",
+    tagline: "Gold & Copper Operations — EAM Platform Deployment",
     location: "Darkhan Region, Mongolia",
     fleet: "24 haul trucks · 8 drill rigs",
     metrics: [
@@ -53,61 +53,61 @@ const caseStudies: CaseStudyData[] = [
     accentColor: "#1bc6e4",
   },
   {
-    id: "oyu-tolgoi",
-    company: "Oyu Tolgoi",
-    tagline: "Multi-Pit Open-Cast → Real-Time Dispatch",
-    location: "South Gobi, Mongolia",
-    fleet: "180+ vehicles · 3 active pits",
+    id: "mcs-construction",
+    company: "MCS Construction",
+    tagline: "Urban Infrastructure — Fleet & Project Management",
+    location: "Ulaanbaatar, Mongolia",
+    fleet: "120 vehicles · 8 active sites",
     metrics: [
       {
-        label: "Shovel-Truck Idle Time",
-        before: "18%",
-        after: "6%",
-        delta: "−67%",
+        label: "Project Delivery Time",
+        before: "Avg. 14% over",
+        after: "On schedule",
+        delta: "−14%",
       },
       {
-        label: "Material Moved Per Shift",
-        before: "Baseline",
-        after: "+28%",
-        delta: "+28%",
+        label: "Equipment Utilization",
+        before: "61%",
+        after: "84%",
+        delta: "+38%",
       },
       {
-        label: "Near-Miss Safety Incidents",
-        before: "High frequency",
-        after: "Reduced",
-        delta: "−34%",
+        label: "Dispatch Response Time",
+        before: "45 min avg",
+        after: "8 min avg",
+        delta: "−82%",
       },
     ],
-    highlight: "+28% material moved per shift",
+    highlight: "+38% equipment utilization across 8 sites",
     accentColor: "#f59e0b",
   },
   {
-    id: "gobi-minerals",
-    company: "Gobi Minerals",
-    tagline: "Remote Coal Site → Satellite-Synced Edge",
-    location: "Ömnögovi Province, Mongolia",
-    fleet: "62 vehicles · 340 km from nearest city",
+    id: "mongol-energy",
+    company: "Mongol Energy Corp",
+    tagline: "Power Grid — Asset Lifecycle Management",
+    location: "Central Province, Mongolia",
+    fleet: "200+ assets · distributed network",
     metrics: [
       {
-        label: "Fuel Consumption",
+        label: "Maintenance Cost",
         before: "Baseline",
-        after: "−22%",
-        delta: "−22%",
+        after: "−28%",
+        delta: "−28%",
       },
       {
-        label: "Manual Report Entries / Day",
+        label: "Asset Visibility",
+        before: "40% tracked",
+        after: "100% tracked",
+        delta: "+150%",
+      },
+      {
+        label: "Outage Response",
         before: "4+ hours",
-        after: "0 min",
-        delta: "−100%",
-      },
-      {
-        label: "Data Latency to HQ",
-        before: "Monthly batch",
-        after: "< 90 sec",
-        delta: "Real-time",
+        after: "< 45 min",
+        delta: "−81%",
       },
     ],
-    highlight: "22% fuel savings · zero manual entry",
+    highlight: "28% maintenance cost reduction · full asset visibility",
     accentColor: "#10b981",
   },
 ]
@@ -281,8 +281,8 @@ export function CaseStudy() {
               </h2>
 
               <p className="text-muted-foreground text-base max-w-xs leading-relaxed mb-10">
-                Three Mongolian mining operations. Three deployments.
-                Measurable outcomes in under 90 days — tracked from edge to board.
+                Three Mongolian enterprises. Three sectors. Measurable outcomes
+                delivered through world-class software and local deployment expertise.
               </p>
 
               {/* Active study callout — cross-fades as scroll position changes */}

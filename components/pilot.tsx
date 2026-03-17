@@ -5,20 +5,20 @@ import { motion } from "framer-motion"
 const phases = [
   {
     phase: "Phase 01",
-    title: "Audit & Edge Install",
-    description: "Baseline data collection and local hardware configuration.",
+    title: "Discovery & Setup",
+    description: "Requirements analysis, environment preparation, and initial configuration.",
   },
   {
     phase: "Phase 02",
-    title: "Workflow Sync",
+    title: "Deploy & Train",
     description:
-      "Deploying automated routing and mechanic field tablets.",
+      "Full platform deployment with hands-on Mongolian-language training for your team.",
   },
   {
     phase: "Phase 03",
-    title: "ROI Review",
+    title: "Evaluate & Scale",
     description:
-      "Comparison of baseline vs pilot performance metrics.",
+      "Performance review, ROI assessment, and roadmap for organization-wide rollout.",
   },
 ]
 
@@ -46,7 +46,7 @@ export function Pilot() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          The 90-Day Optimization Pilot
+          The 90-Day Deployment Program
         </motion.h2>
 
         <motion.p
@@ -56,9 +56,9 @@ export function Pilot() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          We don{"'"}t sell software; we deliver measurable uptime. Our 90-day
-          pilot proves value through initial data optimization and field testing
-          before you commit to full SaaS integration.
+          See the impact before you commit. Our structured 90-day program lets
+          you evaluate the software in your real environment, with full deployment
+          support, before scaling across your organization.
         </motion.p>
 
         <div className="grid md:grid-cols-3 gap-6 text-left">

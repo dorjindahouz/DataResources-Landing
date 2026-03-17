@@ -27,7 +27,7 @@ export function SecuritySection() {
             Your Data Never Leaves Mongolia
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            Built for operations where data sovereignty isn&apos;t optional — it&apos;s the law. Every byte stays within Mongolian borders, on infrastructure you control, with encryption that meets international mining compliance standards.
+            Built for operations where data sovereignty isn&apos;t optional — it&apos;s the law. Every byte stays within Mongolian borders, on infrastructure you control, with encryption that meets international enterprise compliance standards.
           </p>
           <div className="grid sm:grid-cols-2 gap-4">
             {securityFeatures.map((feature, i) => (

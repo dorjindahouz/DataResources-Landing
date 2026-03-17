@@ -5,19 +5,19 @@ import { X, Check } from "lucide-react"
 import { PanelGroup, Panel, PanelResizeHandle } from "react-resizable-panels"
 
 const beforeItems = [
-  "Paper clipboards lost between shifts",
-  "Fuel data reconciled manually each week",
-  "No visibility until site manager calls UB",
-  "Maintenance scheduled by gut feeling",
-  "Satellite outage = total data blackout",
+  "Disconnected systems across departments",
+  "Manual data reconciliation between platforms",
+  "No real-time visibility into operations",
+  "Overseas vendor support with slow response",
+  "Stretched IT team managing multiple tools",
 ]
 
 const afterItems = [
-  "Digital checklists synced in real-time",
-  "Fuel burn tracked per-asset, per-hour",
-  "Live dashboard accessible from anywhere",
-  "Predictive alerts before breakdowns happen",
-  "48-hour offline buffer — zero data loss",
+  "Integrated platforms with unified data flow",
+  "Automated sync across all systems",
+  "Real-time dashboards for every stakeholder",
+  "Local support team in Ulaanbaatar",
+  "Managed by one trusted partner",
 ]
 
 export function BeforeAfterComparison() {
@@ -32,7 +32,7 @@ export function BeforeAfterComparison() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-black tracking-tighter text-3xl lg:text-4xl text-foreground text-balance">
-            From Paper Clipboards to Real-Time Intelligence
+            From Disconnected Systems to Unified Operations
           </h2>
           <p className="text-muted-foreground text-lg mt-4 max-w-2xl mx-auto">
             Drag the slider to compare your current operations with what&apos;s possible.

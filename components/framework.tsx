@@ -4,25 +4,25 @@ import { motion } from "framer-motion"
 
 const frameworks = [
   {
-    title: "The Ledger",
+    title: "Asset & Operations Management",
     description:
-      "Immutable ground-truth data logs ensuring absolute compliance and auditing across all operational shifts.",
+      "Enterprise Asset Management, CMMS, and operational intelligence platforms that give you complete visibility across every asset, every site.",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuBQUihI-rGrXF3cIL9SzpOqWS4fvbSnGoqqmW05UCoGRRcsHSXDBPvVFJ24IFNOOgQ22FozOTSjCnK5FwBvTH6BdAXuIuuwyfEAF__9q3F0xtABxmC1v9G5fQMM7gTvZBOAiCM3c1GApjOm24D5gQ_wAFibBa_XLusDSACcS0czmZti7gOn2mXI1swC_znG9MHt4aUUJ0XYIo8zDBe8AU-VqULsdPMAFuvzIGhZ21rKvTNg3xNcv5KaccYzGbwBvUJy6pRiGCtVHlc",
     alt: "Abstract digital data points connecting into a grid pattern",
   },
   {
-    title: "The Engine",
+    title: "Fleet & Logistics",
     description:
-      "Automated workflows and intelligent task routing that optimizes fleet efficiency and reduces idle time.",
+      "GPS tracking, dispatch optimization, route planning, and fuel management systems for fleets of any size — from 10 vehicles to 500+.",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCoEHP6tVVhgQxb3vBIy040OP8w1lZGIsHaaJgXjFqQ32Esg5LKxST7sXLCcIt63-uFA8lin7NhW0HH0uCMAFW55CMTLRITn_e78DrkJveAGzrYlVAagfTZG1fnAFYvBV9JKZdgfcNVB8SVG6K5CKxO86dnrAovd3EPzPf8EaSCCE_eumMyDf7NYy6ppW7iPK6-m77qlbTHfxqXsuLqqygOVHtMgQp4--zInGK0dw_9mA32WbaKkpy1WQ8DDcwgV-QtUYiUhaiFHRk",
     alt: "Close up of high speed server rack cooling system lights",
   },
   {
-    title: "The Oracle",
+    title: "Analytics & Intelligence",
     description:
-      "Predictive insights and advanced analytics for preventive maintenance, reducing catastrophic failure risks.",
+      "Business intelligence, predictive analytics, and real-time dashboards that transform operational data into strategic decisions.",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuDaYv5PQLRBl9fOW2b6V08qPV6O6oYltDPhOBsfMe-IBjHw4UKL6Z5m3Wa6291FMAZMX-bBAOn_KvKy3amjutUO9Nw5hikJ-qlVxg7LVRu3bn_UBhG4H4Uw6Z596IAADjZB4AYh5932JOpESO9mgXRinmUwzFzjXFqWfxBq0D_CTecUQOpO7o9d3vRZlaBaGx4kGdCZuLBemhTT4CgsW1eMNkH0lic8W7OMhA507CPfVQiyT3Z8a6CtvjZpziN5fnkkW0c8M1p9UtI",
     alt: "Abstract 3D sphere representing data processing and prediction",
@@ -41,11 +41,10 @@ export function Framework() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="font-black tracking-tighter text-3xl lg:text-4xl text-foreground text-balance">
-            Our Software Framework
+            Our Software Portfolio
           </h2>
           <p className="text-muted-foreground text-lg">
-            A modular architecture built for resilience, accuracy, and
-            predictive intelligence.
+            Enterprise-grade platforms for every operational challenge — deployed and supported locally.
           </p>
         </motion.div>
 

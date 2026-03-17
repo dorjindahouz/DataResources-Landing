@@ -27,7 +27,7 @@ const benefits = [
   {
     icon: Globe,
     title: "Mongolia Expertise",
-    description: "Deep understanding of Mongolian mining regulations, terrain, and infrastructure challenges.",
+    description: "Deep understanding of Mongolian business regulations, infrastructure, and operational challenges across all major sectors.",
   },
   {
     icon: Zap,
@@ -47,10 +47,10 @@ export function SalesBenefits() {
     >
       <div>
         <h2 className="font-black tracking-tighter text-3xl lg:text-4xl text-foreground text-balance">
-          Why Mining Operations Choose Us
+          Why Mongolian Enterprises Choose Us
         </h2>
         <p className="text-muted-foreground text-lg mt-4">
-          From the Gobi Desert to the Khentii Mountains, we&apos;ve deployed industrial software in Mongolia&apos;s most challenging environments.
+          Across every major industry in Mongolia, we&apos;ve deployed and supported enterprise software in some of the country&apos;s most challenging operational environments.
         </p>
       </div>
 

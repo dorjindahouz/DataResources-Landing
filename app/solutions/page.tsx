@@ -7,7 +7,7 @@ import { CTABanner } from "@/components/cta-banner"
 export const metadata: Metadata = {
   title: "Solutions | Data Resources LLC",
   description:
-    "Purpose-built mining software solutions for open-pit, underground, and remote operations across Mongolia.",
+    "Enterprise software solutions across mining, construction, energy, logistics, and more in Mongolia.",
 }
 
 export default function SolutionsPage() {
@@ -15,8 +15,8 @@ export default function SolutionsPage() {
     <>
       <PageHero
         badge="Solutions"
-        title="Solutions Built for Mongolia's Toughest Mining Environments"
-        subtitle="From the Gobi Desert to the Khentii Mountains, our platform adapts to every terrain, connectivity challenge, and operational scale."
+        title="Software Solutions for Every Mongolian Industry"
+        subtitle="We match your operational challenges with the world's best software platforms — then deploy, integrate, and support them locally."
         centered
         primaryCTA={{ label: "Contact Sales", href: "/contact-sales" }}
         secondaryCTA={{ label: "View Pricing", href: "/pricing" }}
@@ -25,66 +25,66 @@ export default function SolutionsPage() {
       <SolutionsOverview />
 
       <SolutionDetail
-        id="open-pit"
+        id="mining"
         iconName="Mountain"
-        title="Open-Pit Mining"
-        description="Large-scale surface operations demand real-time visibility across massive areas. Our platform provides fleet-wide tracking, blast planning integration, and haul road optimization."
+        title="Mining & Resources"
+        description="From open-pit to underground operations, we deploy enterprise asset management, fleet tracking, and predictive maintenance platforms trusted by Mongolia's leading mining companies."
         features={[
-          "Real-time GPS tracking for 500+ vehicle fleets",
-          "Haul road optimization reducing fuel costs by up to 18%",
-          "Blast planning and material tracking integration",
-          "Shovel-truck assignment and dispatch optimization",
-          "Dust suppression and environmental monitoring",
+          "Real-time GPS tracking for fleets of any size",
+          "Predictive maintenance reducing unplanned downtime",
+          "Haul road optimization and dispatch systems",
+          "Environmental monitoring and compliance reporting",
+          "Offline-capable deployments for remote mine sites",
         ]}
       />
 
       <SolutionDetail
-        id="underground"
+        id="construction"
         iconName="HardHat"
-        title="Underground Mining"
-        description="Connectivity is the biggest challenge underground. Our edge computing nodes maintain full operational capability even in the deepest shafts, with mesh networking for real-time data."
+        title="Construction & Infrastructure"
+        description="Heavy civil projects demand precise coordination across multiple sites. We deploy fleet management, project tracking, and equipment utilization platforms built for Mongolia's construction sector."
         features={[
-          "Mesh network edge nodes for underground connectivity",
-          "Personnel tracking and safety zone management",
-          "Ventilation and environmental monitoring integration",
-          "Equipment maintenance scheduling for confined spaces",
-          "Automatic data sync when surface connectivity is restored",
+          "Multi-site fleet and equipment tracking",
+          "Project delivery timeline management",
+          "Equipment utilization and idle-time reduction",
+          "Fuel management and cost allocation per project",
+          "Safety compliance and incident tracking",
         ]}
         reversed
       />
 
       <SolutionDetail
-        id="remote"
-        iconName="Radio"
-        title="Remote Site Operations"
-        description="Mongolia's most productive mines are often in its most remote locations. Our satellite-linked, offline-first architecture ensures your operations never miss a beat."
+        id="energy"
+        iconName="Zap"
+        title="Energy & Utilities"
+        description="Power generation and distribution networks require complete asset lifecycle visibility. We deploy platforms that give energy companies full control over maintenance, compliance, and operations."
         features={[
-          "Satellite connectivity with automatic failover",
-          "Full offline operation with smart sync queuing",
-          "Solar-powered edge computing nodes",
-          "Remote diagnostics and over-the-air updates",
-          "Multi-site dashboard for centralized monitoring",
+          "Asset lifecycle management for distributed networks",
+          "Preventive maintenance scheduling and tracking",
+          "Outage response and resolution management",
+          "Regulatory compliance and audit-ready reporting",
+          "SCADA and control system integration",
         ]}
       />
 
       <SolutionDetail
-        id="multi-site"
-        iconName="Building2"
-        title="Multi-Site Fleet Management"
-        description="Coordinate equipment, personnel, and logistics across multiple mining sites from a single command center. Optimize asset utilization across your entire portfolio."
+        id="logistics"
+        iconName="Truck"
+        title="Logistics & Supply Chain"
+        description="Mongolia's vast distances demand intelligent logistics. We deploy route optimization, fleet tracking, and supply chain visibility platforms that keep goods moving efficiently."
         features={[
-          "Centralized fleet visibility across all sites",
-          "Inter-site equipment transfer management",
-          "Unified maintenance scheduling and parts inventory",
-          "Cross-site analytics and benchmarking",
-          "Role-based access with site-level permissions",
+          "Route optimization across Mongolia's road network",
+          "Real-time fleet tracking and driver management",
+          "Warehouse and inventory management integration",
+          "Fuel consumption monitoring and optimization",
+          "Cross-border logistics and customs documentation",
         ]}
         reversed
       />
 
       <CTABanner
         headline="Ready to transform your operations?"
-        description="Join the mining operators who have already modernized their fleet with Data Resources."
+        description="Join the enterprises that trust Data Resources for their software needs."
         primaryCTA={{ label: "Contact Sales", href: "/contact-sales" }}
         secondaryCTA={{ label: "View Pricing", href: "/pricing" }}
       />

@@ -1,32 +1,32 @@
 "use client"
 
-import { CloudOff, Fingerprint, Mic, Cpu } from "lucide-react"
+import { Globe, Users, Wrench, Headphones } from "lucide-react"
 import { motion } from "framer-motion"
 
 const features = [
   {
-    icon: CloudOff,
-    title: "Offline-First Design",
+    icon: Globe,
+    title: "Global Software Partners",
     description:
-      "Synchronize mission-critical data automatically once telemetry is restored.",
+      "Access to the world's leading enterprise software platforms, vetted and certified for Mongolian deployment.",
   },
   {
-    icon: Fingerprint,
-    title: "Greasy-Finger UX",
+    icon: Users,
+    title: "Local Deployment Teams",
     description:
-      "High-contrast, large-target interfaces designed for field tablets and gloved use.",
+      "On-the-ground engineers who understand Mongolian infrastructure, regulations, and business culture.",
   },
   {
-    icon: Mic,
-    title: "Voice-to-Text",
+    icon: Wrench,
+    title: "End-to-End Implementation",
     description:
-      "Hands-free data entry for mechanics during maintenance cycles.",
+      "From needs assessment through deployment, training, and ongoing support — all in one partner.",
   },
   {
-    icon: Cpu,
-    title: "Edge Computing",
+    icon: Headphones,
+    title: "Mongolian-Language Support",
     description:
-      "Local processing power for sub-millisecond response times in the pit.",
+      "Dedicated support teams operating from Ulaanbaatar, fluent in both the technology and the language.",
   },
 ]
 
@@ -81,7 +81,7 @@ export function Solutions() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              Engineered for the Field
+              Why Mongolian Enterprises Choose Us
             </motion.h2>
             <motion.p
               className="text-muted-foreground text-lg leading-relaxed"
@@ -90,10 +90,10 @@ export function Solutions() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              Our solutions are built to withstand deep-pit constraints and
-              limited connectivity, ensuring your data flows even when the
-              network doesn{"'"}t. We bridge the gap between heavy machinery and
-              digital intelligence.
+              We don{"'"}t just sell software — we deploy it, configure it, and
+              support it in environments where global vendors can{"'"}t reach. Our
+              team provides the local expertise that makes world-class technology
+              work across Mongolia.
             </motion.p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6">
               {features.map((feature, i) => (
