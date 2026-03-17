@@ -124,13 +124,13 @@ export function Header() {
 
       {/* Desktop Nav */}
       <nav className="hidden lg:flex flex-1 justify-end gap-2 items-center">
-        <NavigationMenu>
+        <NavigationMenu viewport={false}>
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuTrigger className="bg-transparent text-muted-foreground hover:text-primary hover:bg-white/5 data-[state=open]:bg-white/5">
                 Products
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="bg-deep-navy/95 backdrop-blur-lg border border-white/10 rounded-xl">
+              <NavigationMenuContent className="!bg-deep-navy/95 backdrop-blur-lg !border-white/10 !rounded-xl !shadow-glow overflow-hidden">
                 <div className="grid w-[500px] grid-cols-2 gap-1 p-3">
                   {products.map((item) => (
                     <NavDropdownItem key={item.title} {...item} />
@@ -143,7 +143,7 @@ export function Header() {
               <NavigationMenuTrigger className="bg-transparent text-muted-foreground hover:text-primary hover:bg-white/5 data-[state=open]:bg-white/5">
                 Solutions
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="bg-deep-navy/95 backdrop-blur-lg border border-white/10 rounded-xl">
+              <NavigationMenuContent className="!bg-deep-navy/95 backdrop-blur-lg !border-white/10 !rounded-xl !shadow-glow overflow-hidden">
                 <div className="grid w-[500px] grid-cols-2 gap-1 p-3">
                   {solutions.map((item) => (
                     <NavDropdownItem key={item.title} {...item} />
