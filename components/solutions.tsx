@@ -43,16 +43,27 @@ function FeatureCard({
 }) {
   return (
     <motion.div
-      className="p-6 rounded-xl glass-card hover:shadow-glow transition-all duration-300 group hover:border-primary"
+      className="p-6 rounded-xl glass-card hover:shadow-glow transition-all duration-300 group hover:border-primary relative overflow-hidden"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      whileHover={{ y: -2 }}
+      whileHover={{ 
+        y: -10,
+        rotateX: 5,
+        rotateY: -5,
+        scale: 1.02,
+      }}
+      style={{ perspective: 1000 }}
     >
-      <Icon className="text-primary size-8 mb-4" />
-      <h3 className="text-foreground font-bold mb-2">{title}</h3>
-      <p className="text-muted-foreground text-sm">{description}</p>
+      <div className="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-30 transition-opacity">
+        <Icon className="size-16" />
+      </div>
+      <Icon className="text-primary size-8 mb-4 relative z-10" />
+      <h3 className="text-foreground font-bold mb-2 relative z-10">{title}</h3>
+      <p className="text-muted-foreground text-sm relative z-10">{description}</p>
+      {/* Glow effect on hover */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
     </motion.div>
   )
 }

@@ -46,7 +46,7 @@ export function Hero() {
         </motion.div>
 
         <motion.div
-          className="flex-1 w-full"
+          className="flex-1 w-full relative"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
@@ -58,7 +58,49 @@ export function Hero() {
               className="w-full h-full object-cover"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbEVAbGjdJ8fTuSt6E2It4OyjrpDIOStnBne8HaKRKm4YhPCa2CL7RoRmiXAHuG8ne2xA58odscpFwI0qr19wIe4MBorNznriPLTSllOE580sf9j4sCNbItmnYwc_wEqDHRiNCUHzcOcIjj_n5jA6uQyKPoSzvQdSNj_twwBQ-DSKuooh7J1FOJHMksXr4IuxXtWRDvR-leXQapp71t8SIihPv27gkeNdvQkgyGDm3nrG6nOJnFE7wUcL9QyNku6sRlS6aW6wCaRg"
             />
+            
+            {/* Overlay UI Elements */}
+            <div className="absolute top-4 left-4 z-20 flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
+              <div className="size-2 bg-green-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.8)]" />
+              <span className="text-[10px] font-mono font-bold text-white tracking-wider uppercase">System Live: Oyu Tolgoi Site</span>
+            </div>
+
+            <div className="absolute bottom-4 right-4 z-20 bg-black/60 backdrop-blur-md p-3 rounded-lg border border-white/10 hidden sm:block">
+              <div className="flex gap-4">
+                <div className="space-y-1">
+                  <div className="text-[10px] text-white/50 uppercase font-bold">Uptime</div>
+                  <div className="text-xs font-mono text-primary">99.98%</div>
+                </div>
+                <div className="w-px h-8 bg-white/10" />
+                <div className="space-y-1">
+                  <div className="text-[10px] text-white/50 uppercase font-bold">Latency</div>
+                  <div className="text-xs font-mono text-primary">14ms</div>
+                </div>
+              </div>
+            </div>
           </div>
+
+          {/* Floating Data Points */}
+          {[...Array(3)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute size-2 bg-primary/40 rounded-full blur-[2px] hidden lg:block"
+              animate={{
+                y: [0, -40, 0],
+                x: [0, i % 2 === 0 ? 20 : -20, 0],
+                opacity: [0.2, 0.8, 0.2],
+              }}
+              transition={{
+                duration: 4 + i,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              style={{
+                top: `${20 + i * 30}%`,
+                left: `${-5 + i * 5}%`,
+              }}
+            />
+          ))}
         </motion.div>
       </div>
     </section>

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree /c/Users/PC/Desktop/DataResources-Landing -L 3 -I 'node_modules|.git' 2>/dev/null || find /c/Users/PC/Desktop/DataResources-Landing -not -path '*/node_modules/*' -not -path '*/.git/*' -type f | head -100)",
+      "Bash(cd \"C:/Users/PC/Desktop/DataResources-Landing\" && npm run build 2>&1)",
+      "Bash(cd \"C:/Users/PC/Desktop/DataResources-Landing\" && npx next build 2>&1)",
+      "Bash(cd \"C:/Users/PC/Desktop/DataResources-Landing\" && npm install 2>&1)",
+      "Bash(cd \"C:/Users/PC/Desktop/DataResources-Landing\" && timeout 15 npx next dev --port 3333 2>&1 || true)"
+    ]
+  }
+}

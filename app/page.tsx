@@ -1,4 +1,5 @@
 import { Hero } from "@/components/hero"
+import { LogoCarousel } from "@/components/logo-carousel"
 import { Solutions } from "@/components/solutions"
 import { Framework } from "@/components/framework"
 import { Implementation } from "@/components/implementation"
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <LogoCarousel />
       <Solutions />
       <Framework />
       <Implementation />

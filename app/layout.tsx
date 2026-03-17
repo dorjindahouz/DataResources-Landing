@@ -3,6 +3,7 @@ import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { MouseGlow } from "@/components/mouse-glow"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
@@ -38,6 +39,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} font-sans antialiased bg-deep-navy text-foreground`}
       >
+        <MouseGlow />
         <div className="relative flex min-h-screen w-full flex-col [overflow-x:clip]">
           <div className="fixed inset-0 bg-gradient-to-b from-primary/5 via-transparent to-deep-navy pointer-events-none z-0" />
           <Header />
