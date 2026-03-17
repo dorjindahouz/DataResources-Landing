@@ -2,14 +2,15 @@
 
 import { motion } from "framer-motion"
 import { Shield, Lock, Eye, Server, Database, FileKey } from "lucide-react"
+import { SLAPulse } from "./sla-pulse"
 
 const securityFeatures = [
-  { icon: Shield, title: "Data Sovereignty", description: "All data stored within Mongolia with full jurisdictional control." },
-  { icon: Lock, title: "End-to-End Encryption", description: "AES-256 encryption at rest and TLS 1.3 in transit for all data." },
-  { icon: Eye, title: "Audit Trails", description: "Complete activity logging with tamper-proof records for compliance." },
-  { icon: Server, title: "On-Premise Option", description: "Deploy entirely within your infrastructure — no cloud dependency." },
-  { icon: Database, title: "Automated Backups", description: "Real-time replication with point-in-time recovery across sites." },
-  { icon: FileKey, title: "Access Controls", description: "Granular permissions with multi-factor authentication and SSO." },
+  { icon: Shield, title: "Data Sovereignty", description: "All data stored on Mongolian soil — full jurisdictional control, zero foreign cloud dependency." },
+  { icon: Lock, title: "End-to-End Encryption", description: "AES-256 encryption at rest and TLS 1.3 in transit across every edge node and HQ link." },
+  { icon: Eye, title: "Audit Trails", description: "Tamper-proof activity logs for every asset, user, and data sync — compliance-ready out of the box." },
+  { icon: Server, title: "On-Premise Option", description: "Deploy entirely within your infrastructure. Your servers, your network, your rules." },
+  { icon: Database, title: "Automated Backups", description: "Real-time replication with point-in-time recovery across all mine sites." },
+  { icon: FileKey, title: "Access Controls", description: "Granular per-site permissions with MFA and SSO — from HQ admins to field operators." },
 ]
 
 export function SecuritySection() {
@@ -23,10 +24,10 @@ export function SecuritySection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-black tracking-tighter text-3xl lg:text-4xl text-foreground mb-4">
-            Enterprise-Grade Security
+            Your Data Never Leaves Mongolia
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            Built for industries where data integrity and security are non-negotiable. Our platform meets the strictest compliance requirements.
+            Built for operations where data sovereignty isn&apos;t optional — it&apos;s the law. Every byte stays within Mongolian borders, on infrastructure you control, with encryption that meets international mining compliance standards.
           </p>
           <div className="grid sm:grid-cols-2 gap-4">
             {securityFeatures.map((feature, i) => (
@@ -54,17 +55,7 @@ export function SecuritySection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <div className="glass-card rounded-2xl p-12 text-center bg-grid">
-            <div className="size-24 bg-secondary/50 rounded-2xl flex items-center justify-center text-primary mx-auto mb-6">
-              <Shield className="size-12" />
-            </div>
-            <p className="text-2xl font-black tracking-tighter text-foreground mb-2">
-              SOC 2 Type II
-            </p>
-            <p className="text-muted-foreground text-sm">
-              Compliant infrastructure with annual third-party audits
-            </p>
-          </div>
+          <SLAPulse />
         </motion.div>
       </div>
     </section>
