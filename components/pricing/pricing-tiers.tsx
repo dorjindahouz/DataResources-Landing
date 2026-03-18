@@ -111,7 +111,7 @@ export function PricingTiers() {
                 className={`w-full py-3 rounded-lg font-bold text-center transition-all duration-300 block ${
                   tier.highlighted
                     ? "bg-primary hover:bg-primary/90 text-primary-foreground shadow-md hover:shadow-glow"
-                    : "border border-white/20 hover:border-primary/50 text-foreground hover:bg-white/5"
+                    : "border border-black/10 hover:border-primary/50 text-foreground hover:bg-black/5"
                 }`}
               >
                 {tier.cta.label}

@@ -34,7 +34,7 @@ export function SystemHeartbeat() {
 
   return (
     <motion.div
-      className="p-6 lg:p-8 rounded-2xl font-mono text-sm shadow-2xl relative overflow-hidden backdrop-blur-xl bg-[#0f1a2e]/80 border border-primary/30 shadow-[0_0_40px_-15px_rgba(27,198,228,0.3)]"
+      className="p-6 lg:p-8 rounded-2xl font-mono text-sm shadow-2xl relative overflow-hidden backdrop-blur-xl bg-[#0f1a2e]/95 border border-primary/20 shadow-[0_8px_32px_rgba(0,0,0,0.12)]"
       initial={{ opacity: 0, x: 30 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.7, delay: 0.3 }}
@@ -63,7 +63,7 @@ export function SystemHeartbeat() {
         </div>
       </div>
 
-      <div className="mt-6 pt-4 border-t border-white/10">
+      <div className="mt-6 pt-4 border-t border-white/15">
         <span className="text-green-400">
           {">"} SYSTEM_STATUS: NOMINAL
           <span className={cursorVisible ? "opacity-100" : "opacity-0"}>█</span>

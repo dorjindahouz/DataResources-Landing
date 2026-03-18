@@ -77,7 +77,7 @@ export function Implementation() {
           </motion.div>
 
           <motion.div
-            className="p-8 rounded-2xl font-mono text-sm shadow-2xl relative overflow-hidden backdrop-blur-xl bg-[#0f1a2e]/80 border border-primary/30 shadow-[0_0_40px_-15px_rgba(27,198,228,0.3)]"
+            className="p-8 rounded-2xl font-mono text-sm shadow-2xl relative overflow-hidden backdrop-blur-xl bg-[#0f1a2e]/95 border border-primary/20 shadow-[0_8px_32px_rgba(0,0,0,0.12)]"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}

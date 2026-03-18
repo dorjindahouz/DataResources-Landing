@@ -96,7 +96,7 @@ function NavDropdownItem({
     <NavigationMenuLink asChild>
       <Link
         href={href}
-        className="flex items-start gap-3 rounded-lg p-3 hover:bg-white/5 transition-colors"
+        className="flex items-start gap-3 rounded-lg p-3 hover:bg-black/5 transition-colors"
       >
         <div className="size-10 bg-secondary rounded-lg flex items-center justify-center text-primary shrink-0 mt-0.5">
           <Icon className="size-5" />
@@ -114,7 +114,7 @@ export function Header() {
   const [sheetOpen, setSheetOpen] = useState(false)
 
   return (
-    <header className="flex items-center justify-between whitespace-nowrap px-6 lg:px-20 py-4 sticky top-0 z-50 bg-deep-navy/80 backdrop-blur-md border-b border-white/10">
+    <header className="flex items-center justify-between whitespace-nowrap px-6 lg:px-20 py-4 sticky top-0 z-50 bg-white/60 backdrop-blur-xl border-b border-gray-200/50">
       <Link href="/" className="flex items-center gap-3">
         <Logo />
         <h2 className="font-black tracking-tighter text-foreground">
@@ -127,10 +127,10 @@ export function Header() {
         <NavigationMenu viewport={false}>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="bg-transparent text-muted-foreground hover:text-primary hover:bg-white/5 data-[state=open]:bg-white/5">
+              <NavigationMenuTrigger className="bg-transparent text-muted-foreground hover:text-primary hover:bg-black/5 data-[state=open]:bg-black/5">
                 Software
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="!bg-deep-navy/95 backdrop-blur-lg !border-white/10 !rounded-xl !shadow-glow overflow-hidden">
+              <NavigationMenuContent className="!bg-white/70 backdrop-blur-xl !border-gray-200/50 !rounded-xl !shadow-glow overflow-hidden">
                 <div className="grid w-[500px] grid-cols-2 gap-1 p-3 whitespace-normal">
                   {products.map((item) => (
                     <NavDropdownItem key={item.title} {...item} />
@@ -140,10 +140,10 @@ export function Header() {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="bg-transparent text-muted-foreground hover:text-primary hover:bg-white/5 data-[state=open]:bg-white/5">
+              <NavigationMenuTrigger className="bg-transparent text-muted-foreground hover:text-primary hover:bg-black/5 data-[state=open]:bg-black/5">
                 Industries
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="!bg-deep-navy/95 backdrop-blur-lg !border-white/10 !rounded-xl !shadow-glow overflow-hidden">
+              <NavigationMenuContent className="!bg-white/70 backdrop-blur-xl !border-gray-200/50 !rounded-xl !shadow-glow overflow-hidden">
                 <div className="grid w-[500px] grid-cols-2 gap-1 p-3 whitespace-normal">
                   {solutions.map((item) => (
                     <NavDropdownItem key={item.title} {...item} />
@@ -156,7 +156,7 @@ export function Header() {
               <NavigationMenuLink asChild>
                 <Link
                   href="/enterprise"
-                  className="inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-white/5 transition-colors"
+                  className="inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-black/5 transition-colors"
                 >
                   Enterprise
                 </Link>
@@ -167,7 +167,7 @@ export function Header() {
               <NavigationMenuLink asChild>
                 <Link
                   href="/pricing"
-                  className="inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-white/5 transition-colors"
+                  className="inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-black/5 transition-colors"
                 >
                   Pricing
                 </Link>
@@ -192,7 +192,7 @@ export function Header() {
               <Menu className="size-6" />
             </button>
           </SheetTrigger>
-          <SheetContent side="right" className="bg-deep-navy border-white/10 w-80">
+          <SheetContent side="right" className="bg-white/80 backdrop-blur-xl border-gray-200/50 w-80">
             <SheetHeader>
               <SheetTitle className="flex items-center gap-3">
                 <Logo className="size-6" />
@@ -204,7 +204,7 @@ export function Header() {
 
             <div className="flex flex-col gap-2 px-4 py-6">
               <Accordion type="multiple" className="w-full">
-                <AccordionItem value="products" className="border-white/10">
+                <AccordionItem value="products" className="border-gray-200/50">
                   <AccordionTrigger className="text-foreground font-bold hover:no-underline hover:text-primary">
                     Software
                   </AccordionTrigger>
@@ -214,7 +214,7 @@ export function Header() {
                         <SheetClose asChild key={item.title}>
                           <Link
                             href={item.href}
-                            className="flex items-center gap-3 rounded-lg p-2.5 hover:bg-white/5 transition-colors"
+                            className="flex items-center gap-3 rounded-lg p-2.5 hover:bg-black/5 transition-colors"
                             onClick={() => setSheetOpen(false)}
                           >
                             <item.icon className="size-4 text-primary" />
@@ -226,7 +226,7 @@ export function Header() {
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="solutions" className="border-white/10">
+                <AccordionItem value="solutions" className="border-gray-200/50">
                   <AccordionTrigger className="text-foreground font-bold hover:no-underline hover:text-primary">
                     Industries
                   </AccordionTrigger>
@@ -236,7 +236,7 @@ export function Header() {
                         <SheetClose asChild key={item.title}>
                           <Link
                             href={item.href}
-                            className="flex items-center gap-3 rounded-lg p-2.5 hover:bg-white/5 transition-colors"
+                            className="flex items-center gap-3 rounded-lg p-2.5 hover:bg-black/5 transition-colors"
                             onClick={() => setSheetOpen(false)}
                           >
                             <item.icon className="size-4 text-primary" />
@@ -262,7 +262,7 @@ export function Header() {
               <SheetClose asChild>
                 <Link
                   href="/pricing"
-                  className="text-foreground font-bold py-4 border-b border-white/10 hover:text-primary transition-colors"
+                  className="text-foreground font-bold py-4 border-b border-gray-200/50 hover:text-primary transition-colors"
                   onClick={() => setSheetOpen(false)}
                 >
                   Pricing

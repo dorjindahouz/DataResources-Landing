@@ -24,7 +24,7 @@ function RelatedPages({ data }: { data: PageData }) {
     data.badge === "Software" ? "Related Industries" : "Related Software"
 
   return (
-    <section className="px-6 lg:px-20 py-24 border-t border-white/5">
+    <section className="px-6 lg:px-20 py-24 border-t border-gray-200/50">
       <div className="max-w-7xl mx-auto">
         <motion.h2
           className="font-black tracking-tighter text-3xl lg:text-4xl text-foreground mb-12 text-center"

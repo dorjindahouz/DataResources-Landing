@@ -17,7 +17,7 @@ export function LogoCarousel() {
   const duplicatedLogos = [...logos, ...logos, ...logos]
 
   return (
-    <div className="w-full py-12 bg-background/50 border-y border-white/5 overflow-hidden relative">
+    <div className="w-full py-12 bg-background/50 border-y border-gray-200/50 overflow-hidden relative">
       <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-background to-transparent z-10" />
       <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-background to-transparent z-10" />
       

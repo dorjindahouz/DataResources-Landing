@@ -69,7 +69,7 @@ function AnimatedNumber({ value }: { value: string }) {
 
 export function SocialProof({ metrics }: SocialProofProps) {
   return (
-    <section className="px-6 lg:px-20 py-16 border-y border-white/5 bg-deep-navy/20 backdrop-blur-sm">
+    <section className="px-6 lg:px-20 py-16 border-y border-gray-200/50 bg-white/30 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto">
         <motion.div
           className="grid grid-cols-2 md:grid-cols-4 gap-8"

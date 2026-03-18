@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: "#0a1112",
+  themeColor: "#f0f4f8",
   width: "device-width",
   initialScale: 1,
 }
@@ -35,13 +35,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body
-        className={`${inter.variable} font-sans antialiased bg-deep-navy text-foreground`}
+        className={`${inter.variable} font-sans antialiased bg-background text-foreground`}
       >
         <MouseGlow />
         <div className="relative flex min-h-screen w-full flex-col [overflow-x:clip]">
-          <div className="fixed inset-0 bg-gradient-to-b from-primary/5 via-transparent to-deep-navy pointer-events-none z-0" />
+          <div className="fixed inset-0 bg-gradient-to-b from-primary/5 via-transparent to-background pointer-events-none z-0" />
           <Header />
           <main className="flex flex-col relative z-10 flex-1">
             {children}

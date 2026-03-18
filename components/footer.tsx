@@ -29,7 +29,7 @@ const footerLinks = {
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/10 relative z-10">
+    <footer className="border-t border-white/50 relative z-10 bg-white/40 backdrop-blur-lg">
       <div className="max-w-7xl mx-auto px-6 lg:px-20 py-16">
         {/* Top section: Logo + Link columns */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12">
@@ -68,7 +68,7 @@ export function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-white/10">
+      <div className="border-t border-white/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-20 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
             &copy; 2024 Data Resources LLC. All rights reserved.

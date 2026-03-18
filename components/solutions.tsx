@@ -114,7 +114,7 @@ export function Solutions() {
               className="w-full h-full object-cover"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMoh8f8MlSSSdS09wocK1U66kgOkPHRu4VYTFHuET230bG1XnYHAkEbSz2txPNapoD4MmLdlJECdl-k3nhm5Z5kOGd3pKon5dhHdpERgC7ry-7QMkBRzlW36_SxLGkdNbhJGOCjqLb_Zo3J3tGYEFuPSVa8qDuqrNfehIZp7ZaiwQNZYGYvKcBBAsjg6WcuSA7a-1ZOAzoBKD2FRGRdwTYipYT3q6w6YTz9cj9-1uscw2AYPjGCgpbdt5ZTn42afuT3XjrG6zO7Xg"
             />
-            <div className="absolute inset-0 bg-deep-navy/20 mix-blend-multiply" />
+            <div className="absolute inset-0 bg-black/10 mix-blend-multiply" />
           </motion.div>
         </div>
       </div>

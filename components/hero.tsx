@@ -7,7 +7,7 @@ export function Hero() {
     <section className="px-6 lg:px-20 py-12 lg:py-24 bg-grid relative overflow-hidden">
       {/* Decorative blurs */}
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-primary/20 blur-[120px] rounded-full pointer-events-none" />
-      <div className="absolute top-1/2 -right-24 w-64 h-64 bg-deep-navy/40 blur-[100px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 -right-24 w-64 h-64 bg-primary/10 blur-[100px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 items-center relative z-10">
         <motion.div
@@ -53,7 +53,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
           <div className="aspect-video bg-secondary rounded-xl overflow-hidden shadow-2xl relative border-4 border-border">
-            <div className="absolute inset-0 bg-gradient-to-tr from-deep-navy/40 to-primary/20 z-10" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-black/20 to-primary/10 z-10" />
             <img
               alt="Industrial control room dashboard showing mining operation monitoring systems"
               className="w-full h-full object-cover"
@@ -61,12 +61,12 @@ export function Hero() {
             />
             
             {/* Overlay UI Elements */}
-            <div className="absolute top-4 left-4 z-20 flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
+            <div className="absolute top-4 left-4 z-20 flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20">
               <div className="size-2 bg-green-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.8)]" />
               <span className="text-[10px] font-mono font-bold text-white tracking-wider uppercase">System Live: Enterprise Deployment Monitor</span>
             </div>
 
-            <div className="absolute bottom-4 right-4 z-20 bg-black/60 backdrop-blur-md p-3 rounded-lg border border-white/10 hidden sm:block">
+            <div className="absolute bottom-4 right-4 z-20 bg-black/60 backdrop-blur-md p-3 rounded-lg border border-white/20 hidden sm:block">
               <div className="flex gap-4">
                 <div className="space-y-1">
                   <div className="text-[10px] text-white/50 uppercase font-bold">Uptime</div>

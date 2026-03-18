@@ -62,7 +62,7 @@ export function FeatureComparison() {
         >
           <Table>
             <TableHeader>
-              <TableRow className="border-white/10 hover:bg-transparent">
+              <TableRow className="border-gray-200/50 hover:bg-transparent">
                 <TableHead className="w-[40%] text-foreground font-bold">Feature</TableHead>
                 <TableHead className="text-center text-foreground font-bold">Pilot</TableHead>
                 <TableHead className="text-center text-foreground font-bold">Professional</TableHead>
@@ -71,7 +71,7 @@ export function FeatureComparison() {
             </TableHeader>
             <TableBody>
               {features.map((feature) => (
-                <TableRow key={feature.name} className="border-white/10">
+                <TableRow key={feature.name} className="border-gray-200/50">
                   <TableCell className="text-muted-foreground">{feature.name}</TableCell>
                   <TableCell className="text-center">
                     <CellContent value={feature.pilot} />

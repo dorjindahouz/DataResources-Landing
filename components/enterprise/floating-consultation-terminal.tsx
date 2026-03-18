@@ -42,8 +42,8 @@ export function FloatingConsultationTerminal() {
           exit={{ opacity: 0, y: 40, scale: 0.95 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
         >
-          <div className="rounded-xl font-mono text-xs shadow-2xl overflow-hidden backdrop-blur-xl bg-[#0f1a2e]/90 border border-primary/30 shadow-[0_0_30px_-10px_rgba(27,198,228,0.25)]">
-            <div className="flex items-center justify-between px-3 py-2 border-b border-white/10">
+          <div className="rounded-xl font-mono text-xs shadow-2xl overflow-hidden backdrop-blur-xl bg-[#0f1a2e]/95 border border-primary/20 shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
+            <div className="flex items-center justify-between px-3 py-2 border-b border-white/15">
               <div className="flex gap-1.5">
                 <div className="w-2.5 h-2.5 rounded-full bg-red-500" />
                 <div className="w-2.5 h-2.5 rounded-full bg-yellow-500" />
@@ -67,7 +67,7 @@ export function FloatingConsultationTerminal() {
                 <span className="text-cyan-400">CONSULTATION_QUEUE:</span>{" "}
                 <span className="text-cyan-300">OPEN</span>
               </div>
-              <div className="pt-2 border-t border-white/10">
+              <div className="pt-2 border-t border-white/15">
                 <Link
                   href="/contact-sales"
                   className="text-primary hover:text-primary/80 transition-colors inline-flex items-center"

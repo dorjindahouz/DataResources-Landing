@@ -72,7 +72,7 @@ export function Contact() {
 
   return (
     <section
-      className="px-6 lg:px-20 py-24 border-t border-white/5"
+      className="px-6 lg:px-20 py-24 border-t border-gray-200/50"
       id="contact"
     >
       <div className="max-w-7xl mx-auto">

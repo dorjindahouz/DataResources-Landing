@@ -22,7 +22,7 @@ const afterItems = [
 
 export function BeforeAfterComparison() {
   return (
-    <section className="px-6 lg:px-20 py-24 border-t border-white/5">
+    <section className="px-6 lg:px-20 py-24 border-t border-gray-200/50">
       <div className="max-w-7xl mx-auto">
         <motion.div
           className="text-center mb-12"
@@ -48,7 +48,7 @@ export function BeforeAfterComparison() {
         >
           <PanelGroup direction="horizontal" className="min-h-[360px]">
             <Panel defaultSize={50} minSize={25}>
-              <div className="h-full p-6 lg:p-8 bg-red-500/5 border-r border-white/5">
+              <div className="h-full p-6 lg:p-8 bg-red-500/5 border-r border-gray-200/50">
                 <div className="flex items-center gap-2 mb-6">
                   <div className="size-3 rounded-full bg-red-500" />
                   <span className="text-sm font-bold uppercase tracking-wider text-red-400">

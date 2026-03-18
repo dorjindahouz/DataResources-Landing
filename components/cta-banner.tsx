@@ -40,7 +40,7 @@ export function CTABanner({ headline, description, primaryCTA, secondaryCTA }: C
             {secondaryCTA && (
               <Link
                 href={secondaryCTA.href}
-                className="border border-white/20 hover:border-primary/50 text-foreground px-8 py-4 rounded-lg font-bold text-lg transition-all hover:bg-white/5 duration-300"
+                className="border border-black/10 hover:border-primary/50 text-foreground px-8 py-4 rounded-lg font-bold text-lg transition-all hover:bg-black/5 duration-300"
               >
                 {secondaryCTA.label}
               </Link>

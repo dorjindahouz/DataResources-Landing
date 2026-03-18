@@ -36,7 +36,7 @@ export function SolutionDetail({
   const Icon = iconMap[iconName]
 
   return (
-    <section id={id} className="px-6 lg:px-20 py-24 border-t border-white/5">
+    <section id={id} className="px-6 lg:px-20 py-24 border-t border-gray-200/50">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
         <motion.div
           className={reversed ? "lg:order-2" : ""}

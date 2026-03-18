@@ -58,7 +58,7 @@ export function SalesBenefits() {
         {benefits.map((benefit, i) => (
           <motion.div
             key={benefit.title}
-            className="flex items-start gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors"
+            className="flex items-start gap-4 p-4 rounded-xl hover:bg-black/5 transition-colors"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
